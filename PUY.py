@@ -11,7 +11,7 @@ import time, random, asyncio, timeit, sys, json, codecs, threading, glob, re, st
 print ("\n\n============= HI =============\n")
 
 #cl = RIDEN()
-cl = RIDEN(authTokenRFU="EwjA7BGA87lPrc4L0zU9.grzYgOnTdKvSkrQ7FTsKMq.TmsMcUZV6F1pLmV4TxQ5RDSN8NwxUg/x9iFFmCoYF6s=")
+cl = RIDEN(authTokenRFU="EwQwiT6DfOxNgVq4N5k4.6H/R+wrQy2yUyPPXaxh/na.6NRoxk5l1rhrVXJm/ELejdhCF8SP5CChXEVa60xwpic=")
 cl.log("YOUR TOKEN : {}".format(str(cl.authToken)))
 channel = RIDENChannel(cl,cl.server.CHANNEL_ID['LINE_TIMELINE'])
 cl.log("CHANNEL TOKEN : " + str(channel.getChannelResult()))
@@ -747,6 +747,28 @@ def RIDEN_FAST_USER(fast):
                                     num=(num+1)
                                 msgs+="\n\nTOTAL MEMBER ( %i )" % len(group)
                                 cl.sendText(kirim, msgs)
+
+                        elif rfuText.lower() == 'absen':
+                            cl.sendMessage(kirim,"Hei[1]",contentMetadata={"MSG_SENDER_NAME":"BOT 1","MSG_SENDER_ICON":"URLIMAGE"})
+                            cl.sendMessage(kirim,"Hei[2]",contentMetadata={"MSG_SENDER_NAME":"BOT 2","MSG_SENDER_ICON":"URLIMAGE"})
+                            cl.sendMessage(kirim,"Hei[3]",contentMetadata={"MSG_SENDER_NAME":"BOT 3","MSG_SENDER_ICON":"URLIMAGE"})
+                            cl.sendMessage(kirim,"Hei[4]",contentMetadata={"MSG_SENDER_NAME":"BOT 4","MSG_SENDER_ICON":"URLIMAGE"})
+                            cl.sendMessage(kirim,"Hei[5]",contentMetadata={"MSG_SENDER_NAME":"BOT 5","MSG_SENDER_ICON":"URLIMAGE"})
+                            cl.sendMessage(kirim,"Hei[6]",contentMetadata={"MSG_SENDER_NAME":"BOT 6","MSG_SENDER_ICON":"URLIMAGE"})
+                            cl.sendMessage(kirim,"Hei[7]",contentMetadata={"MSG_SENDER_NAME":"BOT 7","MSG_SENDER_ICON":"URLIMAGE"})
+                            cl.sendMessage(kirim,"Hei[8]",contentMetadata={"MSG_SENDER_NAME":"BOT 8","MSG_SENDER_ICON":"URLIMAGE"})
+                            cl.sendMessage(kirim,"Hei[9]",contentMetadata={"MSG_SENDER_NAME":"BOT 9","MSG_SENDER_ICON":"URLIMAGE"})
+                            cl.sendMessage(kirim,"Hei[10]",contentMetadata={"MSG_SENDER_NAME":"BOT 10","MSG_SENDER_ICON":"URLIMAGE"})
+                            cl.sendMessage(kirim,"Hei[11]",contentMetadata={"MSG_SENDER_NAME":"BOT 11","MSG_SENDER_ICON":"URLIMAGE"})
+                            cl.sendMessage(kirim,"Hei[12]",contentMetadata={"MSG_SENDER_NAME":"BOT 12","MSG_SENDER_ICON":"URLIMAGE"})
+                            cl.sendMessage(kirim,"Hei[13]",contentMetadata={"MSG_SENDER_NAME":"BOT 13","MSG_SENDER_ICON":"URLIMAGE"})
+                            cl.sendMessage(kirim,"Hei[14]",contentMetadata={"MSG_SENDER_NAME":"BOT 14","MSG_SENDER_ICON":"URLIMAGE"})
+                            cl.sendMessage(kirim,"Hei[15]",contentMetadata={"MSG_SENDER_NAME":"BOT 15","MSG_SENDER_ICON":"URLIMAGE"})
+                            cl.sendMessage(kirim,"Hei[16]",contentMetadata={"MSG_SENDER_NAME":"BOT 16","MSG_SENDER_ICON":"URLIMAGE"})
+                            cl.sendMessage(kirim,"Hei[17]",contentMetadata={"MSG_SENDER_NAME":"BOT 17","MSG_SENDER_ICON":"URLIMAGE"})
+                            cl.sendMessage(kirim,"Hei[18]",contentMetadata={"MSG_SENDER_NAME":"BOT 18","MSG_SENDER_ICON":"URLIMAGE"})
+                            cl.sendMessage(kirim,"Hei[19]",contentMetadata={"MSG_SENDER_NAME":"BOT 19","MSG_SENDER_ICON":"URLIMAGE"})
+                            cl.sendMessage(kirim,"Hei[20]",contentMetadata={"MSG_SENDER_NAME":"BOT 20","MSG_SENDER_ICON":"URLIMAGE"})
 
                         elif rfuText.lower() == 'ceksider on':
                             #if user in RfuSekawan or user in Squad["Admin"]:
